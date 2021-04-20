@@ -12,7 +12,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <h1 className="d-flex justify-content-center">
+      <h1 className="d-flex justify-content-center text-white">
         Welcome to Bot!
       </h1>
 

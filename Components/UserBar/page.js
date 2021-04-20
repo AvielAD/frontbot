@@ -3,7 +3,7 @@ import styles from './style.module.css';
 const Page = () => {
     return(
         <>
-            <div className={styles.userbarContent}>
+            <div className={styles.userbarContainer}>
                 <p>
                     Intel Bot
                 </p>

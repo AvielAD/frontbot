@@ -8,7 +8,8 @@ body {
 
 * {
   box-sizing: border-box;
-  background: linear-gradient(to right, #36ddd2, #577fc9, #4747e4);
+  background: linear-gradient(to right, #36ddd2, #577fc9, #4747e4) ;
+  
 }
 
 .globalContainer{
@@ -21,12 +22,11 @@ body {
 .botContainer{
   height: 100%;
   width: 70%;
-  background: rgba(0,0,0,0.4);
   border-radius: 30px;
   padding: 2rem;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: [row1-start] 10% [row1-end] 80% [row2-end] 10% [row3-end];
+  grid-template-rows: [row1-start] 15% [row1-end] 70% [row2-end] 15% [row3-end];
   grid-template-areas: 
   "userbar userbar userbar userbar"
   "userdash userdash userdash userdash"
@@ -38,8 +38,10 @@ body {
 }
 .userDash{
   grid-area: userdash;
-  overflow: auto;
 }
 .userMessage{
   grid-area: usermessage;
+}
+input:focus{
+  outline: none;
 }
