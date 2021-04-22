@@ -1,4 +1,7 @@
 .messageContainer{
     display: flex;
-    align-items: stretch;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    border-radius: 5px;
+
 }

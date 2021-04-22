@@ -13,7 +13,7 @@ export default function Home() {
       </Head>
 
       <h1 className="d-flex justify-content-center text-white">
-        Welcome to Bot!
+            Welcome to Bot!
       </h1>
 
       <div className="globalContainer">
