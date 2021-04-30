@@ -1,13 +1,27 @@
+import {useState, useContext, useRef, useEffect, useCallback} from 'react'
 import styles from './style.module.css';
 import { Field, Form, ErrorMessage, Formik } from 'formik';
-import Socket from '../../Utils/socket';
+import SocketClient from '../../Utils/socket';
+import {MessagesContext} from '../../Utils/Context/Messages';
 
 const Page = () => {
+    const { messages, setMessages} = useContext(MessagesContext)
+    
+    console.log('input messages: ',messages)
+    
     return (
         <>
             <Formik
                 initialValues={initialValues}
-                onSubmit={onSubmit}
+                onSubmit={ (values, actions)=>{
+                    let clientMessage = {
+                        'id': '2',
+                        'name': 'Visitant',
+                        'message': values.sendmessage
+                    }
+                    setMessages([...messages, clientMessage])
+                    SocketClient.emit('message', {'name': 'Visitant', 'message': values.sendmessage})
+                }}
             >
                 <Form autoComplete="off">
                     <div className={`${styles.messageContainer}`}>
@@ -15,7 +29,6 @@ const Page = () => {
                         <button type="submit" className="col-3 col-md-2 p-2 rounded-pill">Send</button>
                     </div>
                 </Form>
-
             </Formik>
         </>
     )
@@ -28,8 +41,7 @@ const initialValues = {
 }
 
 const onSubmit = (values) => {
-    Socket.emit('conectado', 'Hola desde el cliente');
-    console.log('send message')
+
 }
 
 

@@ -1,5 +1,5 @@
 import io from 'socket.io-client';
 
-let socket = io('http://localhost:3001');
+const socket = io(process.env.NEXT_PUBLIC_URL_REAL);
 
 export default socket;

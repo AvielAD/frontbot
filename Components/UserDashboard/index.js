@@ -1,9 +1,8 @@
 import Page from './page';
-
 const UserDashboard = () => {
     return(
-        <>
-            <Page />
+        <>      
+                <Page />
         </>
     )
 }

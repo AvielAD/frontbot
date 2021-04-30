@@ -3,7 +3,7 @@ import Page from './page';
 const UserMessage = () => {
     return(
         <>
-            <Page />
+                <Page />
         </>
     )
 }
