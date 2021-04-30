@@ -4,8 +4,16 @@ import UserBar from '../Components/UserBar';
 import UserDashboard from '../Components/UserDashboard';
 import UserMessage from '../Components/UserMessage';
 import { MessagesProvider } from '../Utils/Context/Messages';
+import socket from '../Utils/socket';
+import { useEffect } from 'react';
 
 export default function Home() {
+
+  useEffect(()=>{
+    socket.send('hello')
+  },[])
+  
+ 
   return (
     <MessagesProvider>
       <div className={styles.container}>
