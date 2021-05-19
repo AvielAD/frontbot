@@ -21,6 +21,7 @@ const Page = () => {
                     }
                     setMessages([...messages, clientMessage])
                     SocketClient.emit('message', {'name': 'Visitant', 'message': values.sendmessage})
+                    actions.resetForm();
                 }}
             >
                 <Form autoComplete="off">

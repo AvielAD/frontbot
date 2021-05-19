@@ -26,9 +26,6 @@ const Page = () => {
 
     useEffect(scrollToBottom, [messages])
 
-    console.log('dashboard messages: ', messages)
-
-
     return(
         <>
             <div className="overflow-auto h-100 w-100" >
