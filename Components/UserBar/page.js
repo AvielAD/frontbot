@@ -7,7 +7,7 @@ const Page = () => {
             <div className={styles.userbarContainer}>
                 <Image className="rounded-circle" src="/assets/imagebot.jpg" height="50" width="50"/>
                 <p className="h3 p-1 text-white">
-                    Chat con Inteli Bot
+                    ChatBot
                 </p>
             </div>
         </>

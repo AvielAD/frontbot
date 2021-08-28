@@ -4,8 +4,12 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-    background: linear-gradient(to right, #36ddd2, #577fc9, #4747e4) ;
+ background: linear-gradient(to right, #36ddd2, #577fc9, #4747e4) ;
+
   }
+/**
+
+*/ 
 
 
 .globalContainer{
@@ -13,11 +17,13 @@ body {
   width: 100%;
   display: flex;
   justify-content: center;
+
 }
 
 .botContainer{
+
   height: 100%;
-  width: 85%;
+  width: 45%;
   border-radius: 30px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
