@@ -12,12 +12,12 @@ export default function Home() {
     <MessagesProvider>
       <div className={styles.container}>
         <Head>
-          <title>Inteli Bot</title>
+          <title>ChatBotUATx</title>
           <link rel="icon" href="/favicon.ico" />
         </Head>
 
         <h1 className="d-flex justify-content-center text-white">
-          Welcome to Bot!
+          Welcome to ChatBotUATx!
       </h1>
 
         <div className="globalContainer">
