@@ -7,7 +7,7 @@ const page = ({data}) => {
         <>
             <div className={`${styles.containerMessageVisitant}`}>
                <p className="p-3 text-white rounded-pill bg-success">{data.message}</p>
-               <Image className="rounded-circle" src="/assets/imagevisitant.jpg"  height="50" width="50" />
+               <Image className="rounded-circle" src="/assets/imagevisitant.jpg"  height="50" width="50" alt='Not Found'/>
             </div>
         </>
     )

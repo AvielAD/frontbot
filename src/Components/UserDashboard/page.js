@@ -15,17 +15,16 @@ const Page = () => {
     }
 
     useEffect(()=>{
-
         SocketClient.on('response', (message)=>{
             setMessages([...messages, message])
         })
+        ref.current.scrollIntoView({ behavior: "smooth"})
         
         return ()=> SocketClient.off();
 
     }, [messages])
 
-    useEffect(scrollToBottom, [messages])
-
+    //useEffect(scrollToBottom, [messages])
     return(
         <>
             <div className="overflow-auto h-100 w-100" >
